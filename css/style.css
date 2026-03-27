@@ -1,0 +1,171 @@
+/* Глобальні стилі та академічна палітра */
+:root {
+    --primary-bg: #f8f9fa;
+    --secondary-bg: #ffffff;
+    --text-color: #2c3e50;
+    --accent-color: #2980b9;
+    --accent-hover: #1c5980;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--primary-bg);
+    line-height: 1.6;
+}
+
+/* Flexbox: Навігація */
+header {
+    background-color: var(--text-color);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Flexbox: Головний екран */
+#hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+#hero h1 {
+    font-size: 2.8rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+#hero h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+/* Оформлення кнопки */
+.btn {
+    padding: 12px 28px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Секція Про діяльність */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Заокруглення кутів для фото */
+.profile-img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px; 
+    margin-top: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout: Сітка для послуг */
+#projects {
+    padding: 50px 20px;
+    background-color: var(--secondary-bg);
+    border-top: 1px solid #e1e8ed;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Оформлення карток з тінями */
+article {
+    background-color: var(--primary-bg);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    margin-bottom: 15px;
+    color: var(--accent-color);
+    font-size: 1.3rem;
+}
+
+/* Підвал */
+footer {
+    background-color: var(--text-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+footer a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
